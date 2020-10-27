@@ -1,0 +1,36 @@
+#signup request
+# POST http://127.0.0.1:3000/api/v1/users HTTP/1.1
+# content-type: application/json
+
+# {
+#     "user": {
+#         "email":"abc1@example.com",
+#         "password":"password",
+#         "password_confirmation":"password"
+#     }
+# }
+
+
+# # Login request
+# POST http://127.0.0.1:3000/api/v1/users/sign_in HTTP/1.1
+# content-type: application/json
+
+# {
+#     "user": {
+#         "email":"abc@example.com",
+#         "password":"password"
+#     }
+# }
+
+# logout request
+
+
+DELETE  http://127.0.0.1:3000/api/v1/users/sign_out HTTP/1.1
+content-type: application/json
+
+{
+   
+}
+
+# curl --header "Content-type: application/json" --request DELETE http://127.0.0.1:3000/api/v1/users/sign_out -v
+
