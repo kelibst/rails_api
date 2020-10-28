@@ -1,9 +1,9 @@
 module Api
   module V1
     class BooksController < ApplicationController
-      
+      before_action :set_book, only: [:show, :edit, :update, :destroy]
       def index
-        render json: Book.all
+        @books = Book.all
       end
 
       def create 
@@ -15,6 +15,12 @@ module Api
         end
       end
 
+      def show
+      end
+
+      def edit
+      end
+
       def destroy
         Book.find(params[:id]).destroy!
         head :no_content
@@ -22,9 +28,14 @@ module Api
 
       private
 
+      def set_book
+        @book = Book.find(params[:id])
+      end
+
       def books_params
         params.require(:book).permit(:title, :author, :descriiption )
       end
+      
 
     end
   end

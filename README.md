@@ -1,9 +1,12 @@
 # rails_api
 
-A basic blog app to master rails API creation
+A basic Rails Api To create Book.
+- Users can add books by posting it to the Books endpoint
+- Users can remove specific Books
+  - users can update specific books
 
 
-![screenshot]()
+![screenshot](screenshot.gif)
 
 ## What it does
 
@@ -17,29 +20,6 @@ A basic blog app to master rails API creation
 *Gems used:*
 
 - Devise (for user authentication)
-- Simple_form
-- Omniauth
-- Omniauth - Facebook
-- Faker
-- Will Paginate
-- Gems used for testing:
-  - Capybara
-  - Selenium webdriver
-  - Chromedriver helper
-  - Database cleaner
-  - Rspec-rails
-  - Shoulda matchers
-
-- Rubocop
-
-## Live Demo
-
-[Live Demo Link]()
-
-## Video Presentation
-
-[![Watch the video]()]()
-
 
 ## Getting Started
 
@@ -64,9 +44,8 @@ Setup database with:
 ``` bash
    rails db:create
    rails db:migrate
+   rails db:seed 
 ```
-
-Create users with:
 
 
 ### Usage
@@ -76,18 +55,9 @@ Start server with:
 ``` bash
     rails server
 ```
+refer to [docs ](docs.md) for more information on how to use the api
 
 Open `http://localhost:3000/` in your browser.
-
-### Run tests
-
-``` bash
-    rpsec
-```
-
-### Deployment
-
-- App deployed in Heroku.
 
 ## Author
 
