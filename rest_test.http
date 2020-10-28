@@ -1,14 +1,14 @@
 #signup request
-# POST http://127.0.0.1:3000/api/v1/users HTTP/1.1
-# content-type: application/json
+POST http://127.0.0.1:3000/api/v1/users HTTP/1.1
+content-type: application/json
 
-# {
-#     "user": {
-#         "email":"abc1@example.com",
-#         "password":"password",
-#         "password_confirmation":"password"
-#     }
-# }
+{
+    "user": {
+        "email":"abc1@example.com",
+        "password":"password",
+        "password_confirmation":"password"
+    }
+}
 
 
 # # Login request
