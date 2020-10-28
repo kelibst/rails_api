@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+    
+for x in 1...6 do
+    Book.create(title: "Home alone #{x}", descriiption: "Some nice description #{x}")
+end
